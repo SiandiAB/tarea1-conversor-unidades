@@ -1,0 +1,18 @@
+[build]
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+[dev]
+  framework = "#custom"
+  command = "echo 'No app server needed'"
+  targetPort = 8888
+  functions = "netlify/functions"
+  publish = "."
+
+# Redirigir /api/* a las funciones serverless
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200

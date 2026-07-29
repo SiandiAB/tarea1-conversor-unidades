@@ -1,0 +1,24 @@
+{
+  "name": "api-conversor-unidades",
+  "version": "1.0.0",
+  "description": "API REST para conversión de unidades usando Netlify Functions",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js",
+    "build": "echo 'No build step required'"
+  },
+  "keywords": [
+    "netlify",
+    "functions",
+    "api",
+    "conversion",
+    "unidades"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@netlify/functions": "^2.0.0",
+    "express": "^5.2.1"
+  }
+}
